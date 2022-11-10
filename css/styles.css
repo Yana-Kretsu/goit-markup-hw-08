@@ -1,0 +1,181 @@
+:root {
+    --main-white-bgc: #FFFFFF;
+    --main-bgc: #2F303A;
+    --secondary-white-bgc: #F5F4FA;
+    
+    --accent-color: #2196F3;
+    
+    --logo-black: #000000;
+    --main-black-text:  #212121;
+    --main-white-text:  #FFFFFF;
+    --main-text: #757575;
+}
+
+body {
+    background-color: var(--main-white-bgc);
+    color: var(--main-text);
+
+    font-family: 'Roboto', sans-serif;
+    letter-spacing: 0.03em;
+}
+
+/* font-family: 'Raleway', sans-serif;
+font-family: 'Roboto', sans-serif; */
+
+h2,
+h3 {
+    color: var(--main-black-text);
+}
+
+
+.link {
+    text-decoration: none;
+}
+
+.list {
+    list-style-type: none; 
+}
+
+/* HEADER */
+
+.logo {
+    color:var(--logo-black);
+
+    font-family: 'Raleway', sans-serif;
+    font-weight: 700;
+    font-size: 26px;
+    line-height: 1.19;
+}
+
+.logo-accent {
+    color: var(--accent-color);
+}
+
+.nav-list a,
+.contacts-list a {
+    color: var(--main-black-text);
+    
+    font-weight: 500;
+    font-size: 14px;
+    line-height: 1.14;  
+    letter-spacing: 0.02em;
+}
+
+.nav-list a:hover,
+.nav-list a:focus,
+.contacts-list a:hover,
+.contacts-list a:focus {
+    color: var(--accent-color);
+}
+
+.contacts-list a {
+    color: var(--main-text);
+}
+
+/* MAIN */
+/* HERO */
+
+.hero {
+    background-color: var(--main-bgc);
+}
+
+.hero-header {
+    color: var(--main-white-text);
+
+    font-weight: 900;
+    font-size: 44px;
+    line-height: 1.36;
+    letter-spacing: 0.06em;
+
+    text-align: center;
+}
+
+.btn {
+    background-color: var(--accent-color);
+    color: var(--main-white-text);
+    
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+    
+    text-align: center; 
+}
+ 
+.btn:hover {
+    background-color: var(--main-white-text);
+    color: var(--accent-color);
+}
+
+.pluses-list h3 {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14px;
+}
+
+.pluses-list p {
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+/* WHAT WE DO */
+
+.what-we-do h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.16;
+
+    text-align: center;
+}
+
+/* TEAM */
+
+.team {
+    background-color: var(--secondary-white-bgc);
+}
+
+.team h2 {
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 1.17;
+
+    text-align: center;
+}
+
+.team-list h3 {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+}
+
+.team-list p {
+    font-size: 16px;
+    line-height: 1.19;
+
+    text-align: center;
+}
+
+ /* FOOTER */
+
+footer {
+    background-color: var(--main-bgc);
+}
+
+.footer-list a {
+    color: var(--main-text);
+
+    font-style: normal;
+    font-size: 14px;
+    line-height: 1.71;
+}
+
+.link-map.link { 
+    color: var(--main-white-text);
+}
+
+.footer-list a:hover,
+.footer-list a:focus {
+    color: var(--accent-color);
+}
