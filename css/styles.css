@@ -102,9 +102,11 @@ h3 {
     text-align: center; 
 }
  
-.btn:hover {
+.btn:hover,
+.btn:focus {
     background-color: var(--main-white-text);
     color: var(--accent-color);
+    cursor: pointer;
 }
 
 .pluses-list h3 {
@@ -178,4 +180,37 @@ footer {
 .footer-list a:hover,
 .footer-list a:focus {
     color: var(--accent-color);
+}
+
+/* PORTFOLIO */
+/* WORKS */
+
+.btn-list button {
+    background-color: var(--secondary-white-bgc);
+    color: var(--main-black-text);
+
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 1.63;
+    text-align: center;
+}
+ 
+.btn-list button:hover,
+.btn-list button:focus {
+    background-color: var(--accent-color); 
+    color: var(--main-white-text);
+    cursor: pointer;
+}
+ 
+.examples-list h2 {
+    font-weight: 700;
+    font-size: 18px;
+    line-height: 2;
+    letter-spacing: 0.06em;
+}
+
+.example-list p {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 1.88;
 }
