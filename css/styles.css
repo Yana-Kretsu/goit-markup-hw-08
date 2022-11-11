@@ -51,8 +51,8 @@ h3 {
     color: var(--accent-color);
 }
 
-.nav-list a,
-.contacts-list a {
+.nav-list-link,
+.contacts-list-link {
     color: var(--main-black-text);
     
     font-weight: 500;
@@ -61,14 +61,14 @@ h3 {
     letter-spacing: 0.02em;
 }
 
-.nav-list a:hover,
-.nav-list a:focus,
-.contacts-list a:hover,
-.contacts-list a:focus {
+.nav-list-link:hover,
+.nav-list-link:focus,
+.contacts-list-link:hover,
+.contacts-list-link:focus {
     color: var(--accent-color);
 }
 
-.contacts-list a {
+.contacts-list-link {
     color: var(--main-text);
 }
 
@@ -94,6 +94,7 @@ h3 {
     background-color: var(--accent-color);
     color: var(--main-white-text);
     
+    font-family: 'Roboto', sans-serif;
     font-weight: 700;
     font-size: 16px;
     line-height: 1.88;
@@ -109,21 +110,19 @@ h3 {
     cursor: pointer;
 }
 
-.pluses-list h3 {
-    font-weight: 700;
+.pluses-list-header {
     font-size: 14px;
-    line-height: 1.14px;
+    line-height: 1.14;
 }
 
-.pluses-list p {
+.pluses-list-text {
     font-size: 14px;
     line-height: 1.71;
 }
 
 /* WHAT WE DO */
 
-.what-we-do h2 {
-    font-weight: 700;
+.what-we-do-header {
     font-size: 36px;
     line-height: 1.16;
 
@@ -136,15 +135,14 @@ h3 {
     background-color: var(--secondary-white-bgc);
 }
 
-.team h2 {
-    font-weight: 700;
+.team-header {
     font-size: 36px;
     line-height: 1.17;
 
     text-align: center;
 }
 
-.team-list h3 {
+.team-list-header {
     font-weight: 500;
     font-size: 16px;
     line-height: 1.19;
@@ -152,7 +150,7 @@ h3 {
     text-align: center;
 }
 
-.team-list p {
+.team-list-text {
     font-size: 16px;
     line-height: 1.19;
 
@@ -165,8 +163,8 @@ footer {
     background-color: var(--main-bgc);
 }
 
-.footer-list a {
-    color: var(--main-text);
+.footer-list-link {
+    color: rgba(255, 255, 255, 0.6);
 
     font-style: normal;
     font-size: 14px;
@@ -177,40 +175,44 @@ footer {
     color: var(--main-white-text);
 }
 
-.footer-list a:hover,
-.footer-list a:focus {
+.footer-list-link:hover,
+.footer-list-link:focus {
     color: var(--accent-color);
+}
+
+.footer-logo { 
+    color: var(--main-white-text);
 }
 
 /* PORTFOLIO */
 /* WORKS */
 
-.btn-list button {
+.btn-item {
     background-color: var(--secondary-white-bgc);
     color: var(--main-black-text);
 
+    font-family: 'Roboto', sans-serif;
     font-weight: 500;
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
 }
  
-.btn-list button:hover,
-.btn-list button:focus {
+.btn-item:hover,
+.btn-item:focus {
     background-color: var(--accent-color); 
     color: var(--main-white-text);
     cursor: pointer;
 }
  
-.examples-list h2 {
-    font-weight: 700;
+.examples-list-header {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
 }
 
-.example-list p {
-    font-weight: 400;
+.examples-list-text{
+    color: var(--main-text);
     font-size: 16px;
     line-height: 1.88;
 }
