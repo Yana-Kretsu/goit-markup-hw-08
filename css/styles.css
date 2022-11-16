@@ -11,6 +11,15 @@
     --main-text: #757575;
 }
 
+html {
+    box-sizing: border-box;
+}
+
+*,
+::after::before {
+    box-sizing: inherit;
+}
+
 body {
     background-color: var(--main-white-bgc);
     color: var(--main-text);
@@ -22,9 +31,27 @@ body {
 /* font-family: 'Raleway', sans-serif;
 font-family: 'Roboto', sans-serif; */
 
+h1,
 h2,
 h3 {
     color: var(--main-black-text);
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+p {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+ul, ol {
+    margin-top: 0;
+    margin-bottom: 0;
+    padding-left: 0;
+}
+
+img {
+    display: block;
 }
 
 
@@ -36,7 +63,28 @@ h3 {
     list-style-type: none; 
 }
 
+.container {
+    width: 1200px;
+    padding: 0 15px;
+    margin: 0 auto;
+
+    outline: 1px solid red;
+}
+
+.section {
+    padding-top: 94px;
+    padding-bottom: 94px;
+}
+
+button {
+    box-sizing: border-box;
+}
+
 /* HEADER */
+
+header {
+    border: 1px #ECECEC solid;
+}
 
 .logo {
     color:var(--logo-black);
@@ -45,6 +93,11 @@ h3 {
     font-weight: 700;
     font-size: 26px;
     line-height: 1.19;
+
+    /* ????????????? */
+    display: inline-block;
+    margin-top: 24px;
+    margin-bottom: 26px;
 }
 
 .logo-accent {
@@ -88,6 +141,8 @@ h3 {
     letter-spacing: 0.06em;
 
     text-align: center;
+
+    width: 700px;
 }
 
 .btn {
@@ -101,6 +156,11 @@ h3 {
     letter-spacing: 0.06em;
     
     text-align: center; 
+
+    border-radius: 4px;
+    border-color: transparent;
+    padding: 10px 32px;
+    margin-top: 30px;
 }
  
 .btn:hover,
@@ -110,9 +170,21 @@ h3 {
     cursor: pointer;
 }
 
+/* pluses */
+
+.pluses {
+    padding-bottom: 0;
+}
+
+.pluses-item {
+    width: 270px;
+}
+
 .pluses-list-header {
     font-size: 14px;
     line-height: 1.14;
+
+    margin-bottom: 10px;
 }
 
 .pluses-list-text {
@@ -127,6 +199,8 @@ h3 {
     line-height: 1.16;
 
     text-align: center;
+
+    margin-bottom: 50px;
 }
 
 /* TEAM */
@@ -140,6 +214,12 @@ h3 {
     line-height: 1.17;
 
     text-align: center;
+
+    margin-bottom: 50px;
+}
+
+.team-item {
+    padding-bottom: 30px;
 }
 
 .team-list-header {
@@ -148,6 +228,9 @@ h3 {
     line-height: 1.19;
 
     text-align: center;
+
+    margin-top: 30px;
+    margin-bottom: 10px;
 }
 
 .team-list-text {
@@ -161,6 +244,9 @@ h3 {
 
 footer {
     background-color: var(--main-bgc);
+
+    padding-top: 75px;
+    padding-bottom: 45px;
 }
 
 .footer-list-link {
@@ -182,6 +268,8 @@ footer {
 
 .footer-logo { 
     color: var(--main-white-text);
+
+    margin-bottom: 20px;
 }
 
 /* PORTFOLIO */
@@ -196,8 +284,16 @@ footer {
     font-size: 16px;
     line-height: 1.63;
     text-align: center;
+
+    border-radius: 4px;
+    padding: 6px 22px;
+    border-color: transparent;
 }
  
+.btn-list {
+    margin-bottom: 50px;
+}
+
 .btn-item:hover,
 .btn-item:focus {
     background-color: var(--accent-color); 
@@ -209,10 +305,19 @@ footer {
     font-size: 18px;
     line-height: 2;
     letter-spacing: 0.06em;
+
+    margin-top: 20px;
+    margin-bottom: 4px;
 }
 
 .examples-list-text{
     color: var(--main-text);
     font-size: 16px;
     line-height: 1.88;
+}
+
+.examples-item {
+    padding-bottom: 20px;
+    border: 1px  #EEEEEE solid;
+    width: 370px;
 }
