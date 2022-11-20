@@ -84,11 +84,11 @@ button {
 
 header {
     border: 1px #ECECEC solid;
+    padding-top: 24px;
+    padding-bottom: 25px;
 }
 
 .site-header .container {
-    padding-top: 24px;
-    padding-bottom: 25px;
     display: flex;
     align-items: center;
 }
@@ -165,6 +165,7 @@ align-items: center;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    padding: 200px 0;
 }
 
 .hero-header {
@@ -209,6 +210,10 @@ align-items: center;
 
 .pluses {
     padding-bottom: 0;
+}
+
+.pluses-header {
+    visibility: hidden;
 }
 
 .pluses-list {
@@ -338,19 +343,23 @@ footer {
 }
 
 .footer-item:not(:last-child) {
-    margin-bottom: 12px;
+    margin-bottom: 9px;
 
 }
 
 /* PORTFOLIO */
 /* WORKS */
 
+.works-header {
+    visibility: hidden;
+}
+
 .btn-list {
     display: flex;
     justify-content: center;
-    
     margin-bottom: 50px;
 }
+
 
 .btn-item {
     background-color: var(--secondary-white-bgc);
@@ -366,7 +375,10 @@ footer {
     padding: 6px 22px;
     border-color: transparent;
 }
- 
+
+.btn-list-item:not(:last-child) {
+    margin-right: 8px;
+}
 
 
 .btn-item:hover,
@@ -386,7 +398,6 @@ footer {
     line-height: 2;
     letter-spacing: 0.06em;
 
-    margin-top: 20px;
     margin-bottom: 4px;
 }
 
@@ -397,7 +408,6 @@ footer {
 }
 
 .examples-item {
-    padding-bottom: 20px;
     border: 1px  #EEEEEE solid;
     width: 370px;
 }
@@ -412,4 +422,6 @@ footer {
 
 .examples-item-wrap {
     padding-left: 24px;
+    padding-top: 20px;
+    padding-bottom: 20px;
 }
