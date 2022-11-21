@@ -80,10 +80,20 @@ button {
     box-sizing: border-box;
 }
 
+.visually-hidden {
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+    height: 1px;
+    overflow: hidden;
+    position: absolute;
+    white-space: nowrap;
+    width: 1px;
+}
+
 /* HEADER */
 
 header {
-    border: 1px #ECECEC solid;
+    border-bottom: 1px #ECECEC solid;
     padding-top: 24px;
     padding-bottom: 25px;
 }
@@ -212,9 +222,6 @@ align-items: center;
     padding-bottom: 0;
 }
 
-.pluses-header {
-    visibility: hidden;
-}
 
 .pluses-list {
     display: flex;
@@ -350,9 +357,6 @@ footer {
 /* PORTFOLIO */
 /* WORKS */
 
-.works-header {
-    visibility: hidden;
-}
 
 .btn-list {
     display: flex;
