@@ -153,11 +153,11 @@ align-items: center;
     color: var(--main-text);
 }
 
+
 .contacts-item:not(:last-child) {
     margin-right: 40px;
 
 }
-
 
 .contacts-list {
     display: flex;
@@ -167,7 +167,21 @@ align-items: center;
 /* HERO */
 
 .hero {
+    background-image: linear-gradient(
+    to right,
+        rgba(47, 48, 58, 0.4),
+        rgba(47, 48, 58, 0.4)
+        ),
+        url(../images/hero.jpg);
+    background-size: cover;
+    background-position: center;
+    max-width: 1600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto; 
+
     background-color: var(--main-bgc);
+
 }
 
 .hero .container {
@@ -176,7 +190,7 @@ align-items: center;
     justify-content: center;
     align-items: center;
     padding: 200px 0;
-}
+} 
 
 .hero-header {
     color: var(--main-white-text);
