@@ -151,6 +151,14 @@ align-items: center;
 
 .contacts-list-link {
     color: var(--main-text);
+    display: flex;
+    align-items: center;
+
+}
+
+.contact-icon {
+    fill: currentColor;
+    margin-right: 10px;
 }
 
 
@@ -163,6 +171,8 @@ align-items: center;
     display: flex;
     margin-left: auto;
 }
+
+
 /* MAIN */
 /* HERO */
 
@@ -239,6 +249,19 @@ align-items: center;
 
 .pluses-list {
     display: flex;
+}
+
+.pluses-icon-box {
+    width: 270px;
+    height: 120px;
+    background-color: #F5F4FA;
+    border-radius: 4px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    margin-bottom: 30px;
 }
 
 .pluses-item {
@@ -327,6 +350,17 @@ align-items: center;
     line-height: 1.19;
 
     text-align: center;
+}
+
+/* clients section */
+
+.clients-header {
+    font-size: 36px;
+    line-height: 1.17;
+
+    text-align: center;
+
+    margin-bottom: 50px;
 }
 
  /* FOOTER */
