@@ -461,6 +461,53 @@ footer {
 
 }
 
+.footer-wrap {
+    display: flex;
+}
+
+.footer-welcome {
+    margin-left: 70px;
+    margin-top: 12px;
+}
+
+.footer-welcome-header {
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-white-text);
+    margin-bottom: 20px;
+}
+
+.footer-icon-list {
+    display: flex;
+    justify-content: center;
+    margin-top: 16px;
+}
+
+.footer-icon-item:not(:last-child) {
+    margin-right: 10px;
+}
+
+.footer-icon-link {
+    display: flex;
+    width: 44px;
+    height: 44px;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color: var(--main-white-text);
+    background-color: rgba(255, 255, 255, 0.1);
+}
+
+.footer-icon {
+    fill: currentColor;
+}
+
+.footer-icon-link:hover,
+.footer-icon-link:focus {
+    background-color: var(--accent-color);
+    color: var(--main-white-text);
+}
+
 /* PORTFOLIO */
 /* WORKS */
 
@@ -497,6 +544,7 @@ footer {
     background-color: var(--accent-color); 
     color: var(--main-white-text);
     cursor: pointer;
+    box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 1px 2px rgba(0, 0, 0, 0.08), 0px 2px 2px rgba(0, 0, 0, 0.12);
 }
 
 .examples-list {
@@ -535,4 +583,9 @@ footer {
     padding-left: 24px;
     padding-top: 20px;
     padding-bottom: 20px;
+}
+
+.examples-item:hover,
+.examples-item:focus {
+    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
