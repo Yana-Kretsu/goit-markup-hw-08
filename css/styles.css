@@ -140,12 +140,46 @@ align-items: center;
     font-size: 14px;
     line-height: 1.14;  
     letter-spacing: 0.02em;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .nav-list-link:hover,
 .nav-list-link:focus,
 .contacts-list-link:hover,
 .contacts-list-link:focus {
+    color: var(--accent-color);
+}
+
+.nav-list-link::after {
+    content:"";
+    height: 4px;
+    width: 100%;
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    background-color: var(--accent-color);
+
+    border-radius: 2px;
+
+    opacity: 0;
+    transition: opacity 500ms linear;
+}
+
+.nav-list-link:hover::after {
+    opacity: 1;
+}
+
+.actual.nav-list-link::after {
+    opacity: 1;
+}
+
+.nav-list-link {
+    position: relative;
+    padding: 32px 0;
+}
+
+.actual {
     color: var(--accent-color);
 }
 
@@ -231,6 +265,8 @@ align-items: center;
     border-color: transparent;
     padding: 10px 32px;
     margin-top: 30px;
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
  
 .btn:hover,
@@ -370,6 +406,8 @@ align-items: center;
     align-items: center;
     border-radius: 50%;
     color: #AFB1B8;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .team-icon {
@@ -406,6 +444,8 @@ align-items: center;
     border: #AFB1B8 1px solid; 
     border-radius: 4px;
     color: #AFB1B8;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), border-color 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .clients-icon {
@@ -419,6 +459,7 @@ align-items: center;
 .clients-link:hover,
 .clients-link:focus {
     color: var(--accent-color);
+    border-color: var(--accent-color);
 }
 
 
@@ -496,6 +537,8 @@ footer {
     border-radius: 50%;
     color: var(--main-white-text);
     background-color: rgba(255, 255, 255, 0.1);
+
+    transition: background-color 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .footer-icon {
@@ -532,6 +575,8 @@ footer {
     border-radius: 4px;
     padding: 6px 22px;
     border-color: transparent;
+
+    transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1), background-color 250ms cubic-bezier(0.4, 0, 0.2, 1), box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);;
 }
 
 .btn-list-item:not(:last-child) {
@@ -569,6 +614,8 @@ footer {
 .examples-item {
     border: 1px  #EEEEEE solid;
     width: 370px;
+
+    transition: box-shadow 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
 .examples-item:not(:nth-last-of-type(-n+3)) {
