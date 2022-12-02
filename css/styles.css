@@ -339,6 +339,33 @@ align-items: center;
     margin-right: 30px;
 }
 
+.what-we-do-item {
+    position: relative;
+}
+
+.what-we-do-text-box {
+    background-color: rgba(47, 48, 58, 0.8);
+
+    width: 100%;
+    height: 70px;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    position: absolute;
+    bottom: 0;
+    left: 0;
+}
+
+.what-we-do-text {
+    color: var(--main-white-text);
+
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 1.14;
+}
+
 /* TEAM */
 
 .team {
@@ -636,3 +663,34 @@ footer {
 .examples-item:focus {
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.12), 0px 4px 4px rgba(0, 0, 0, 0.06), 1px 4px 6px rgba(0, 0, 0, 0.16);
 }
+
+.overlay-box {
+    position: relative;
+    overflow: hidden;
+
+    
+}
+
+.works-overlay {
+    position: absolute;
+    pointer-events: none;
+    top: 0;
+    left: 0;
+    transform: translateY(100%);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+
+    background-color: rgba(33, 150, 243, 0.9);
+    padding: 63px 24px;
+}
+
+.examples-item:hover .works-overlay {
+    transform: translateY(0);
+}
+
+.works-overlay-text {
+    color: var(--main-white-text);
+
+    font-size: 18px;
+    line-height: 1.55;
+}
+
