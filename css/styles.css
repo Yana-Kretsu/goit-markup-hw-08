@@ -578,6 +578,84 @@ footer {
     color: var(--main-white-text);
 }
 
+.footer-form {
+    margin-right: 0;
+    margin-left: auto;
+    width: 570px;
+    margin-top: 12px;
+}
+
+.footer-form-header {
+    font-size: 14px;
+    line-height: 1.14;
+    color: var(--main-white-text);
+}
+
+.footer-form-line{
+    display: flex;
+
+    margin-top: 20px;
+}
+
+.footer-form-input {
+    width: 358px;
+    height: 50px;
+    border: 1px solid rgba(255, 255, 255, 0.3);
+    border-radius: 4px;
+    background-color: transparent;
+    padding: 15px 16px;
+    outline: none;
+    margin-right: 12px;
+
+    font-size: 16px;
+    line-height: 1.25;
+    color: var(--main-white-text);
+
+    transition: border 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-input:hover,
+.footer-form-input:focus-within {
+    border-color: var(--accent-color);
+}
+
+
+.footer-form-input::placeholder {
+    font-size: 16px;
+    line-height: 1.25;
+    color: rgba(255, 255, 255, 0.6);
+}
+
+.footer-form-btn {
+    color: var(--main-white-text);
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    background-color: var(--accent-color);
+    padding: 10px 28px;
+    border: none;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+
+    display: flex;
+    align-items: center;
+    transform: scale(1);
+    transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.footer-form-btn:hover,
+.footer-form-btn:focus {
+    transform: scale(1.05);
+}
+
+
+.footer-btn-icon {
+    margin-left: 10px;
+}
+
 /* PORTFOLIO */
 /* WORKS */
 
@@ -715,6 +793,7 @@ footer {
     width: 528px;
     height: 581px;
     padding: 40px;
+    border-radius: 4px;
 
     position: absolute;
     top: 50%;
