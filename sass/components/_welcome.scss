@@ -1,0 +1,11 @@
+.welcome {
+    margin-left: 70px;
+    margin-top: 12px;
+
+    &__header {
+        font-size: 14px;
+        line-height: 1.14;
+        color: $main-white-text;
+        margin-bottom: 20px;
+    }
+}

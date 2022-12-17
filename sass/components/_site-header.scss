@@ -1,0 +1,10 @@
+.site-header {
+    border-bottom: 1px $header-border solid;
+    padding-top: 24px;
+    padding-bottom: 25px;
+
+    & .container {
+        display: flex;
+        align-items: center;
+    }
+}
