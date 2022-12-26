@@ -1,0 +1,26 @@
+.mobile-medias {
+    margin-top: 64px;
+
+    display: flex;
+
+    &__link {
+        color: $accent-color;
+        font-weight: 500;
+        font-size: 18px;
+        line-height: 1.22;
+        letter-spacing: 0.02em;
+
+    }
+
+    &__item:not(:last-child) {
+        border-right: 1px solid $modal;
+        padding-right: 10px;
+    }
+
+    &__item:not(:first-child) {
+        padding-left: 10px;
+    }
+
+
+
+}

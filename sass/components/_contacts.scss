@@ -1,52 +1,30 @@
-.contacts {
-    display: flex;
-    margin-left: auto;
+@media screen and ( max-width: 767px) {
+   .site-header .contacts {
+       display: none;
 
-     &__link {
-        color: $main-text;
-        display: flex;
-        align-items: center;
-    
-        font-weight: 500;
-        font-size: 14px;
-        line-height: 1.14;  
-        letter-spacing: 0.02em;
+       
+   }
 
-        transition: color 250ms cubic-bezier(0.4, 0, 0.2, 1);
-     }
+   .menu-container .contacts {
+      &__item:first-child {
+         margin-bottom: 32px;
+       }
 
-     &__link:hover,
-     &__link:focus {
-        color: $accent-color;
-     }
+      &__link--tel {
+         color: $accent-color;
+         font-weight: 500;
+         font-size: 34px;
+         line-height: 1.18;
+         letter-spacing: 0.02em;
 
-     &__icon {
-        fill: currentColor;
-        margin-right: 10px;
-     }
+      }
 
-     &__item:not(:last-child) {
-        margin-right: 40px;
-    }
-
-    &.footer__contacts {
-      flex-direction: column;
-    }
-
-    & .footer__link {
-        color: $footer-contacts;
-
-        font-style: normal;
-        font-size: 14px;
-        line-height: 1.71;
-    }
-
-    & .footer__link:hover,
-    & .footer__link:focus {
-      color: $accent-color;
-    }
-}
-
-.link-map {
-   color: $main-white-text;
+      &__link--mail {
+         color: $main-text ;
+         font-weight: 500;
+         font-size: 24px;
+         line-height: 1.17;
+         letter-spacing: 0.02em;
+      }
+   }
 }

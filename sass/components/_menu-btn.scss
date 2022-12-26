@@ -1,0 +1,24 @@
+.menu-btn {
+    background-color: transparent;
+    border: none;
+
+    &.js-open-menu {
+        color: $main-black-text;
+    }
+
+    &__icon {
+        fill: currentColor;
+    }
+
+    &.js-close-menu {
+        color: $main-black-text;
+        display: block;
+        margin: 0 0 0 auto;
+    }
+
+    &__icon-close {
+        fill: currentColor;
+    }
+
+
+}

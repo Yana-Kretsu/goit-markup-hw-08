@@ -1,0 +1,28 @@
+.menu-container {
+    display: none;
+}
+
+@media screen and (max-width: 767px) {
+    .menu-container {
+        display: none;
+        position: fixed;
+        top: 0px;
+        left: 0px;
+
+        background-color: $main-white-bgc;
+        width: 100%;
+        height: 100%;
+        padding: 10px 15px 48px 40px;
+
+        &.is-open {
+            display: block;
+        }
+    }
+}
+
+.menu-space-wrapper {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-content: space-between;
+}

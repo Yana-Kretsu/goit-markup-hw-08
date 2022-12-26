@@ -14,8 +14,14 @@
 <body>
     <header class="site-header">
         <div class="container">
+            <a href="./index.html" class="logo link"><span class="logo--accent">Web</span>Studio</a>
+            <button type="button " class="menu-btn js-open-menu" aria-expanded="false"
+            aria-controls="mobile-menu">
+                <svg class="menu-btn__icon" width="40" height="40">
+                    <use href="./images/icons.svg#icon-menu"></use>
+                </svg>
+            </button>
             <nav class="navigation">
-                <a href="./index.html" class="logo link"><span class="logo--accent">Web</span>Studio</a>
                 <ul class="navigation__list list">
                     <li class="navigation__item"><a href="./index.html" class="link navigation__link actual">Студія</a></li>
                     <li class="navigation__item"><a href="./portfolio.html" class="link navigation__link">Портфоліо</a></li>
@@ -37,7 +43,7 @@
             </ul>
         </div>
     </header>
-    <main>
+    <!-- <main>
         <section class="hero">
             <div class="container">
                 <h1 class="hero__header">ЕФЕКТИВНІ РІШЕННЯ ДЛЯ ВАШОГО БІЗНЕСУ</h1>
@@ -309,8 +315,39 @@
                 </ul>
             </div>
         </section>
-    </main>
-    <footer class="footer">
+    </main> -->
+    <div class="menu-container js-menu-container" id="mobile-menu">
+        <button type="button " class="menu-btn js-close-menu">
+            <svg class="menu-btn__icon-close" width="40" height="40">
+                <use href="./images/icons.svg#icon-close-menu"></use>
+            </svg>
+        </button>
+        <div class="menu-space-wrapper">
+            <nav class="navigation">
+                <ul class="navigation__list list">
+                    <li class="navigation__item"><a href="./index.html" class="link navigation__link actual">Студія</a></li>
+                    <li class="navigation__item"><a href="./portfolio.html" class="link navigation__link">Портфоліо</a></li>
+                    <li class="navigation__item"><a href="./contacts.html" class="link navigation__link">Контакти</a></li>
+                </ul>
+        
+            </nav>
+            <div class="menu-wrapper">
+                <ul class="contacts list">
+                    <li class="contacts__item"><a href="tel:+380961111111" class="link contacts__link contacts__link--tel">
+                        +38 096 111 11 11</a></li>
+                    <li class="contacts__item"><a href="mailto:info@devstudio.com" class="link contacts__link contacts__link--mail">
+                        info@devstudio.com</a></li>
+                </ul>
+                <ul class="mobile-medias list">
+                    <li class="mobile-medias__item"><a href="" class="mobile-medias__link link">Instagram</a></li>
+                    <li class="mobile-medias__item"><a href="" class="mobile-medias__link link">Twitter</a></li>
+                    <li class="mobile-medias__item"><a href="" class="mobile-medias__link link">Facebook</a></li>
+                    <li class="mobile-medias__item"><a href="" class="mobile-medias__link link">LinkedIn</a></li>
+                </ul>
+            </div>
+        </div>
+    </div>
+    <!-- <footer class="footer">
         <div class="container footer__wrap">
             <div class="footer__navigation">
                 <a href="./index.html" class="footer__logo logo link"><span class="logo--accent">Web</span>Studio</a>
@@ -370,8 +407,8 @@
         </div>
         
          
-    </footer>
-    <div class="backdrop is-hidden" data-modal>
+    </footer> -->
+    <!-- <div class="backdrop is-hidden" data-modal>
         <div class="modal">
             <button type="button" class="close-btn" data-modal-close>
                 <svg width="11px" height="11px">
@@ -428,7 +465,14 @@
             </form>
 
         </div>
-    </div>
+    </div> -->
+    <script
+      defer
+      src="https://cdnjs.cloudflare.com/ajax/libs/body-scroll-lock/3.1.5/bodyScrollLock.min.js"
+      integrity="sha512-HowizSDbQl7UPEAsPnvJHlQsnBmU2YMrv7KkTBulTLEGz9chfBoWYyZJL+MUO6p/yBuuMO/8jI7O29YRZ2uBlA=="
+      crossorigin="anonymous"
+    ></script>
+    <script defer src="./js/mobile-menu.js"></script>
     <script src="./js/modal.js"></script>
 </body>
 </html>
