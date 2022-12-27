@@ -67,3 +67,8 @@ button {
     white-space: nowrap;
     width: 1px;
 }
+
+@mixin section-mobile() {
+    padding-top: 60px;
+    padding-bottom: 60px;
+}

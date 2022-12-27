@@ -1,0 +1,40 @@
+.pluses {
+
+    &__icon-box {
+        height: 120px;
+        background-color: $bgc-icon-box ;
+        border-radius: 4px;
+
+        display: flex;
+        justify-content: center;
+        align-items: center;
+
+        margin-bottom: 30px;
+    }
+
+    &__header {
+        font-size: 14px;
+        line-height: 1.14;
+
+        margin-bottom: 10px;
+    }
+
+    &__text {
+        font-size: 14px;
+        line-height: 1.71;
+    }
+}
+
+@media screen and (max-width: 767px) {
+    .pluses {
+        @include section-mobile;
+
+        &__header {
+            text-align: center;
+        }
+
+        &__item:not(:last-child) {
+            margin-bottom: 30px;
+        }
+    }
+}
