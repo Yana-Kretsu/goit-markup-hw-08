@@ -1,0 +1,9 @@
+.footer {
+    background-color: $main-bgc;
+}
+
+@media screen and(max-width: 767px) {
+    .footer{
+        @include section-mobile;
+    }
+}

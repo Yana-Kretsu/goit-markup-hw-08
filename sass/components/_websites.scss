@@ -1,7 +1,6 @@
 .websites {
         display: flex;
         justify-content: center;
-        margin-top: 16px;
     
     &__item:not(:last-child) {
         margin-right: 10px;

@@ -47,7 +47,11 @@
 
         &__item:not(:last-child) {
             margin-bottom: 30px;
-        }    
+        } 
+        
+        &__text {
+            margin-bottom: 16px;
+        }
 
         & img {
             width: 100%;
