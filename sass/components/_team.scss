@@ -28,6 +28,10 @@
 
         text-align: center;
     }    
+
+    & img {
+        width: 100%;
+    }
 }
 
 @media screen and (max-width: 767px) {
@@ -52,11 +56,28 @@
         &__text {
             margin-bottom: 16px;
         }
+    }
+}
 
-        & img {
-            width: 100%;
+@media screen and (min-width: 768px) {
+    .team {
+        @include section-mobile;
+
+        &__header {
+            font-size: 28px;
+            line-height: 1.18;
+            margin-bottom: 30px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        &__item {
+            width: calc((100% - 4 * 15px) /2);
+            margin: 15px;
         }
     }
-
-    
 }

@@ -38,3 +38,20 @@
         }
     }
 }
+
+@media screen and (min-width: 768px) {
+    .pluses {
+        @include section-mobile;
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        &__item {
+            width: calc((100% - 4*15px) /2);
+            margin: 15px;
+        }
+    }
+}

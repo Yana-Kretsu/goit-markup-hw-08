@@ -40,7 +40,22 @@
             margin-bottom: 30px;
         }
     }
+}   
 
+@media screen and (min-width: 768px) {
+    .hero {
+        height: 400px;
+        width: 768px;
+        padding: 118px 0;
 
+        &__header {
+            font-weight: 900;
+            font-size: 26px;
+            line-height: 1.62;
+            letter-spacing: 0.1em;
+            margin-bottom: 30px;
+            width: 360px;
+        }
+    }
 }
 

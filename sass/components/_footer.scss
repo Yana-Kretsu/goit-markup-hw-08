@@ -7,3 +7,15 @@
         @include section-mobile;
     }
 }
+
+@media screen and(min-width: 768px) {
+    .footer{
+        @include section-mobile;
+
+        &__tablet-wrap {
+            padding: 0 60px;
+            display: flex;
+            justify-content: space-between;
+        }
+    }
+}
