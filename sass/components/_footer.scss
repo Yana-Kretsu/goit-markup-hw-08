@@ -19,3 +19,17 @@
         }
     }
 }
+
+@media screen and(min-width: 1200px) {
+    .footer {
+        & .container {
+            display: flex;
+        }
+
+        &__tablet-wrap {
+            padding: 0;
+            display: flex;
+            justify-content: start;
+        }
+    }
+}

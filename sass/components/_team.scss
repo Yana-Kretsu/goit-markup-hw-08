@@ -81,3 +81,26 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .team {
+        @include section-desktop;
+
+        &__header {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 50px;
+        }
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        &__item {
+            width: calc((100% - 8 * 15px) /4);
+            margin: 15px;
+        }
+    }
+}

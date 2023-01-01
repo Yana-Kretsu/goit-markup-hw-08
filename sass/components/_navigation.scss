@@ -112,4 +112,18 @@
     }
 }
 
+@media screen and (min-width: 1200px) {
+    .site-header .navigation {
+        margin-right: 92px;
+
+        &__link {
+            padding: 35px 0;
+        }
+    }
+
+    .footer__navigation {
+        align-items: flex-start;
+    }
+}
+
 

@@ -55,3 +55,20 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .pluses {
+        @include section-desktop;
+
+        &__list {
+            display: flex;
+            flex-wrap: wrap;
+            margin: -15px;
+        }
+
+        &__item {
+            width: calc((100% - 8*15px) /4);
+            margin: 15px;
+        }
+    }  
+}

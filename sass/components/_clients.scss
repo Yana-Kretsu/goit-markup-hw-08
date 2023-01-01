@@ -75,3 +75,27 @@
         }
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .clients {
+        @include section-desktop;
+
+        &__header {
+            font-size: 36px;
+            line-height: 1.17;
+            margin-bottom: 50px;
+        }
+
+        &__list {
+            display: flex;
+            margin: -15px;
+            flex-wrap: wrap;
+            
+        }
+
+        &__item {
+            width: calc((100% - 12 * 15px) /6);
+            margin: 15px;
+        }
+    }
+}

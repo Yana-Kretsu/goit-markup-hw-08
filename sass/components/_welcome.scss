@@ -26,3 +26,12 @@
         margin-top: 5px;
     }
 }
+
+@media screen and (min-width: 1200px) {
+    .welcome {
+        align-items: flex-start;
+        margin-top: 12px;
+        margin-left: 70px;
+        margin-right: 93px;
+    }
+}

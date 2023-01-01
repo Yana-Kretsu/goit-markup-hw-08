@@ -20,5 +20,10 @@
     .site-header {
         padding: 21px 0;
     }
-    
+}
+
+@media screen and (min-width: 1200px) {
+    .site-header {
+        padding: 24px 0 25px 0;
+    }
 }

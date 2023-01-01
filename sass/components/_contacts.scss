@@ -91,3 +91,21 @@
       align-items: center;
    }
 }
+
+
+@media screen and (min-width: 1200px) {
+   .site-header .contacts {
+      display: flex;
+      align-items: center;
+
+      &__item:first-child {
+         margin-right: 30px;
+         margin-bottom: 0;
+      }
+
+   }
+
+   .footer .contacts {
+      align-items: flex-start;
+   }
+}

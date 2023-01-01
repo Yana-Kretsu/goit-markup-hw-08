@@ -84,3 +84,21 @@
         }
     }
 }    
+
+@media screen and (min-width: 1200px) {
+    .footer-form {
+        margin-top: 12px;
+        align-items: flex-start;
+
+
+        &__aline {
+            flex-direction: row;
+        }
+
+        &__input {
+            margin-bottom: 0;
+            margin-right: 12px;
+            width: 358px;
+        }
+    }
+}
