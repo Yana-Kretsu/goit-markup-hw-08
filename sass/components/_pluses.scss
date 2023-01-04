@@ -59,6 +59,7 @@
 @media screen and (min-width: 1200px) {
     .pluses {
         @include section-desktop;
+        padding-bottom: 0;
 
         &__list {
             display: flex;

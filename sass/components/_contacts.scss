@@ -67,7 +67,7 @@
           align-items: center;
       
           font-weight: 500;
-          font-size: 14px;
+          font-size: 12px;
           line-height: 1.14;  
           letter-spacing: 0.02em;
   
@@ -101,6 +101,10 @@
       &__item:first-child {
          margin-right: 30px;
          margin-bottom: 0;
+      }
+
+      &__link {
+         font-size: 14px;
       }
 
    }
